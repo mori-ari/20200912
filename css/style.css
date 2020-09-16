@@ -8,6 +8,10 @@ body{
     background: #7293C2;
 }
 
+img:hover{
+    opacity: 0.5 ;
+}
+
 
 #header{
     position: fixed;
@@ -15,12 +19,11 @@ body{
     background-color: #202943;
     width: 100%;
     color: #ffffff;
-    /* height: 96px; */
 }
 
 #header_inbox{
     position:relative;
-    height: 96px;
+    height: 46px;
     display: flex;
 }
 
@@ -60,10 +63,7 @@ body{
 }
 
 #timeline{
-    /* height: auto;
-    height: 100%; */
-    height: 660px;
-    padding-top:96px;
+    padding:46px 0 64px;
     overflow:auto;
 }
 
@@ -144,7 +144,7 @@ body{
     background-color: #fff;
     width: 100%;
     color: #000;
-    height: 94px;
+    height: 64px;
 
 }
 
@@ -174,9 +174,20 @@ input:focus{
     outline: 0;
 }
 
-#roll img{
+
+label {
+    display: inline-block;
+  }
+  
+label img {
+    pointer-events: none;
     height:26px;
     filter: brightness(500%);
+  }
+
+  
+input[type=file] {
+    display: none;
 }
 
 #send{
@@ -190,15 +201,11 @@ input:focus{
 }
 
 #send img{
-    /* filter: brightness(300%); */
     filter: brightness(50%) sepia(100) saturate(100) hue-rotate(210deg);
     height:26px;
 }
 
-#send img:hover{
-    opacity: 0.5 ;
 
-}
 
 
     
