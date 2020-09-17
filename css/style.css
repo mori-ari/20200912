@@ -63,10 +63,11 @@ img:hover{
 }
 
 #timeline{
-    padding:46px 0 64px;
+    padding-top:46px;
     overflow:auto;
+    /* height: calc(100% - 100px); */
+    height: 790px;
 }
-
 #date_area{
     margin: 16px;
     text-align: center;
